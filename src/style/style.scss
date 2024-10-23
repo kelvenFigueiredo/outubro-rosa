@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+$dark-pink: #FF69B4;
+$light-pink: #FFD9EC;
+
+.header-container{
+
+    width: 100%;
+    height: 90px;
+    display: flex;
+    background-color: $dark-pink;
+    color: white;
+}
+.header-container section{
+    width: 22%;
+}
+.header-container section a{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+    align-items: center;
+    color: white;
+}
+.header-container section a img{
+    width: 78px;
+    height: 80px;
+}
+
+header .header-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+header .header-container nav{
+    width: 80%;
+    height: 100%;
+}
+
+header nav ul{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+header nav ul li a:hover{
+    font-size:large;
+    transition: .3s ease-in;
+}
+
+main .section-one{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: $light-pink;
+}
+main .section-one p{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+}
+main .section-one aside{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+main .section-one aside{
+    display: flex;
+    align-items: center;
+}
+main .section-one aside img{
+    height: 90%;
+    width: 80%;
+}
+
+main .section-two{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: $dark-pink;
+    color: white;
+}
+main .section-two p{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+}
+main .section-two aside{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+main .section-two aside{
+    display: flex;
+    align-items: center;
+}
+main .section-two aside img{
+    height: 90%;
+    width: 80%;
+}
+
+main .section-three{
+    background-color: $light-pink;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-height: 28rem;
+    align-items: center;
+}
+main .section-three img{
+    width: 280px;
+    height: 280px;
+}
+
+.footer-container{
+    height: 160px;
+    background-color: $dark-pink;
+}
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer-left{
+    display: flex;
+    height: 35%;
+    align-items: center;
+    width: 15rem;
+    justify-content: space-evenly;
+}
+footer div section a img{
+    width: 60px;
+    height: 60px;
+}
+footer div section div{
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+
+    .header-container {
+        flex-direction: column; 
+        height: auto;
+        padding: 1rem;
+        align-items: center;
+    }
+
+    .header-container section {
+        width: 15rem;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-container section a {
+        flex-direction: column; 
+        justify-content: center;
+    }
+
+    .header-container section a img {
+        width: 60px;
+        height: 60px;
+    }
+
+    header nav{
+        display: flex;
+        justify-content: center;
+    }
+    header nav ul {
+        flex-direction: column;
+        width: 20rem; 
+        display: flex;
+        justify-content: center;
+    }
+
+    header nav ul li {
+        margin-bottom: 1rem;
+    }
+
+    header nav ul li a {
+        font-size: 1.2rem;
+    }
+    
+    main .section-one {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    main .section-one p, 
+    main .section-one aside {
+        width: 100%; 
+        text-align: center; 
+    }
+
+    main .section-two {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    main .section-two p, 
+    main .section-two aside {
+        width: 100%;
+        text-align: center;
+    }
+
+    main .section-three {
+        min-height: 35rem;
+        flex-direction: column;
+    }
+
+    main .section-three img {
+        height: 280px;
+        height: auto;
+    }
+    .footer-container {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .footer-left {
+        width: 12rem;
+        justify-content: space-around;
+        margin-bottom: 1rem;
+    }
+
+    footer div section a img {  
+        width: 50px;
+        height: 50px;
+    }
+
+    footer div section div {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+}
